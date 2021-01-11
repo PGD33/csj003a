@@ -1,13 +1,36 @@
-<!DOCTYPE html>
-
 <html>
   <head>
-    <title>CSK003a by PGD</title>
+    <title>CSK003a</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    
+   
+    
+   <style>
+     h1, p {
+       color: Purple;
+       font-family: 'Luckiest Guy', cursive;
+     }
+   </style>
+   
   </head>
-  
+
   <body>
     <h1>Welcome to Cardano Starter Kit #003!</h1>
-    <p>Where we party like it's 1999</p>
-  </body>
+    <p>Where we party like it's <span id="myYear"></span></p>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+    
+    <script>
+      var year = 2010;
+      document.getElementById("myYear").innerHTML = year;
+      
+    </script>
   
+  
+  </body>
+
 </html>
